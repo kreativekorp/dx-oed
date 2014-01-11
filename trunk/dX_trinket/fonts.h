@@ -1,0 +1,193 @@
+#ifndef FONTS_H
+#define FONTS_H
+
+#define F_PIP(n)         (0x00 + (n))
+#define F_HORIZ           0x1A
+#define F_VERT            0x1B
+#define F_LEFT            0x1C
+#define F_UP              0x1D
+#define F_RIGHT           0x1E
+#define F_DOWN            0x1F
+#define F_BLANK           0x20
+#define F_PLUS            0x2B
+#define F_MINUS           0x2D
+#define F_DIGIT(n)       (0x30 + (n))
+#define F_0               0x30
+#define F_1               0x31
+#define F_2               0x32
+#define F_3               0x33
+#define F_4               0x34
+#define F_5               0x35
+#define F_6               0x36
+#define F_7               0x37
+#define F_8               0x38
+#define F_9               0x39
+#define F_A               0x41
+#define F_B               0x42
+#define F_C               0x43
+#define F_D               0x44
+#define F_E               0x45
+#define F_F               0x46
+#define F_G               0x47
+#define F_H               0x48
+#define F_I               0x49
+#define F_J               0x4A
+#define F_K               0x4B
+#define F_L               0x4C
+#define F_M               0x4D
+#define F_N               0x4E
+#define F_O               0x4F
+#define F_P               0x50
+#define F_Q               0x51
+#define F_R               0x52
+#define F_S               0x53
+#define F_T               0x54
+#define F_U               0x55
+#define F_V               0x56
+#define F_W               0x57
+#define F_X               0x58
+#define F_Y               0x59
+#define F_Z               0x5A
+#define F_a               0x61
+#define F_b               0x62
+#define F_c               0x63
+#define F_d               0x64
+#define F_e               0x65
+#define F_f               0x66
+#define F_g               0x67
+#define F_h               0x68
+#define F_i               0x69
+#define F_j               0x6A
+#define F_k               0x6B
+#define F_l               0x6C
+#define F_m               0x6D
+#define F_n               0x6E
+#define F_o               0x6F
+#define F_p               0x70
+#define F_q               0x71
+#define F_r               0x72
+#define F_s               0x73
+#define F_t               0x74
+#define F_u               0x75
+#define F_v               0x76
+#define F_w               0x77
+#define F_x               0x78
+#define F_y               0x79
+#define F_z               0x7A
+#define F_CURSOR          0x7F
+#define F_COPY            0x80
+#define F_M_SUIT(n)      (0x81 + (n))
+#define F_DOT             0x81
+#define F_BAM             0x82
+#define F_CRAK            0x83
+#define F_PIP_ALT(n)     (_font_pip2(n))
+#define F_PIP_ALT_2       0x84
+#define F_PIP_ALT_3       0x85
+#define F_PIP_ALT_7       0x86
+#define F_PIP_ALT_8       0x87
+#define F_B_SUIT(n)      (0x88 + (n))
+#define F_B_SPADE         0x88
+#define F_B_DIAMOND       0x89
+#define F_B_CLUB          0x8A
+#define F_B_HEART         0x8B
+#define F_W_SUIT(n)      (0x8C + (n))
+#define F_W_SPADE         0x8C
+#define F_W_DIAMOND       0x8D
+#define F_W_CLUB          0x8E
+#define F_W_HEART         0x8F
+#define F_DIGIT_ALT(n)   (0x90 + (n))
+#define F_0_ALT           0x90
+#define F_1_ALT           0x91
+#define F_2_ALT           0x92
+#define F_3_ALT           0x93
+#define F_4_ALT           0x94
+#define F_5_ALT           0x95
+#define F_6_ALT           0x96
+#define F_7_ALT           0x97
+#define F_8_ALT           0x98
+#define F_9_ALT           0x99
+#define F_10              0x9A
+#define F_16              0x9B
+#define F_32              0x9C
+#define F_64              0x9D
+#define F_100             0x9E
+#define F_128             0x9F
+#define F_PIN             0xA0
+#define F_RED_DRAGON      0xA1
+#define F_GREEN_DRAGON    0xA2
+#define F_WHITE_DRAGON    0xA3
+#define F_EAST            0xA4
+#define F_SOUTH           0xA5
+#define F_WEST            0xA6
+#define F_NORTH           0xA7
+#define F_W_KING          0xA8
+#define F_W_QUEEN         0xA9
+#define F_W_ROOK          0xAA
+#define F_W_BISHOP        0xAB
+#define F_W_KNIGHT        0xAC
+#define F_W_PAWN          0xAD
+#define F_B_KING          0xAE
+#define F_B_QUEEN         0xAF
+#define F_B_ROOK          0xB0
+#define F_B_BISHOP        0xB1
+#define F_B_KNIGHT        0xB2
+#define F_B_PAWN          0xB3
+#define F_ARIES           0xB4
+#define F_TAURUS          0xB5
+#define F_GEMINI          0xB6
+#define F_CANCER          0xB7
+#define F_LEO             0xB8
+#define F_VIRGO           0xB9
+#define F_LIBRA           0xBA
+#define F_SCORPIO         0xBB
+#define F_SAGITTARIUS     0xBC
+#define F_CAPRICORN       0xBD
+#define F_AQUARIUS        0xBE
+#define F_PISCES          0xBF
+#define F_SUN             0xC0
+#define F_MOON            0xC1
+#define F_RISING_SIGN     0xC2
+#define F_MERCURY         0xC3
+#define F_VENUS           0xC4
+#define F_EARTH           0xC5
+#define F_MARS            0xC6
+#define F_JUPITER         0xC7
+#define F_SATURN          0xC8
+#define F_URANUS          0xC9
+#define F_NEPTUNE         0xCA
+#define F_PLUTO           0xCB
+#define F_ASCENDING_NODE  0xCC
+#define F_DESCENDING_NODE 0xCD
+#define F_COMET           0xCE
+#define F_ANCHOR          0xCF
+#define F_ROCK            0xD0
+#define F_PAPER           0xD1
+#define F_SCISSORS        0xD2
+#define F_LIZARD          0xD3
+#define F_SPOCK           0xD4
+#define F_NUN             0xD5
+#define F_GIMEL           0xD6
+#define F_HEI             0xD7
+#define F_SHIN            0xD8
+#define F_PEI             0xD9
+#define F_DIAGONAL        0xDA
+#define F_ANTIDIAGONAL    0xDB
+#define F_UP_LEFT         0xDC
+#define F_UP_RIGHT        0xDD
+#define F_DOWN_RIGHT      0xDE
+#define F_DOWN_LEFT       0xDF
+#define F_W_CIRCLE        0xE0
+#define F_G_CIRCLE        0xE1
+#define F_B_CIRCLE        0xE2
+#define F_W_SQUARE        0xE3
+#define F_G_SQUARE        0xE4
+#define F_B_SQUARE        0xE5
+
+unsigned char get_font_column_8x8(unsigned char ch, unsigned char col);
+unsigned char get_font_column_4x8(unsigned char ch, unsigned char col);
+unsigned char get_font_column_2x8(unsigned char ch, unsigned char col);
+unsigned char get_font_column_4x4(unsigned char ch, unsigned char col);
+unsigned char get_font_column_2x4(unsigned char ch, unsigned char col);
+unsigned char _font_pip2(unsigned char ch);
+
+#endif
